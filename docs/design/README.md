@@ -171,7 +171,7 @@
 
 ## Реляційна схема
 
-<img src="D:\User\Downloads\quiz.png">
+<img src="./media/Schema.png">
 
 
 
