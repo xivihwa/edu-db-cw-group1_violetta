@@ -11,9 +11,11 @@
 
 <img src="./media_labs6/Users.png">
 
+<img src="./media_labs6/Users1.png">
+
 ### Отримання інформації по id Usera
 
-<img src="./media_labs6/Users1.png">
+<img src="./media_labs6/User_id.png">
 
 ### Створення нового юзера
 
