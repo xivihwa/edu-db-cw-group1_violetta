@@ -225,9 +225,9 @@ RESTfull сервіс для управління таблиці User у баз�
 фреймворку Flask на мові Python.
 RESTfull сервіс представляє собою базовий CRUD застосунок, тобто "Набор джентельмена", Create, Read, Update і Delete.
 
-### Файл app.py 
+### Файл app.py
 
-#### Імпорти 
+#### Імпорти:
 
     from flask import Flask, request, jsonify
     from flask_restful import Resource, Api
@@ -236,13 +236,13 @@ RESTfull сервіс представляє собою базовий CRUD за
     app = Flask(__name__)
     api = Api(app)
 
-#### Конфігурація бази даних MySQL
+#### Конфігурація бази даних MySQL:
 
     app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:D18132004_ua@localhost/quiz'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     db = SQLAlchemy(app)
 
-#### Створення моделі для User і Role
+#### Створення моделі для User і Role:
 
     class RoleModel(db.Model):
     __tablename__ = 'Role'
@@ -251,7 +251,7 @@ RESTfull сервіс представляє собою базовий CRUD за
 
     users = db.relationship('UserModel', backref='role')
 
-#### Модель User
+#### Модель User:
     class UserModel(db.Model):
     __tablename__ = 'User'
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
@@ -273,7 +273,7 @@ RESTfull сервіс представляє собою базовий CRUD за
             "role_id": self.role_id
         }
 
-#### Ініціалізація бази даних
+#### Ініціалізація бази даних:
 
     with app.app_context():
     db.create_all()
