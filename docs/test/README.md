@@ -37,7 +37,6 @@
 
 <img src="./media_labs6/User_not_found.png">
 
-
 ### Вміст таблиці 'User' у базі 'quiz' даних після видалення юзеру
 
 <img src="./media_labs6/User_delete_SQL.png">
@@ -46,7 +45,8 @@
 
 <img src="./media_labs6/User_update.png">
 
-### Вміст таблиці 'User' у базі 'quiz' даних після виконання усіх операцій
+
+### Вміст таблиці 'User' у базі 'quiz'  даних після виконання усіх операцій
 
 <img src="./media_labs6/Users_SQL.png">
 
