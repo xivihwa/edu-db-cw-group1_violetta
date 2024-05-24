@@ -251,7 +251,7 @@ RESTfull сервіс представляє собою базовий CRUD за
 
     users = db.relationship('UserModel', backref='role')
 
-# Модель User
+#### Модель User
     class UserModel(db.Model):
     __tablename__ = 'User'
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
