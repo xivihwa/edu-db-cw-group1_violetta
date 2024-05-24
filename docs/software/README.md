@@ -75,7 +75,7 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `quiz`.`User` ;
 
 CREATE TABLE IF NOT EXISTS `quiz`.`User` (
-`id` INT NOT NULL,
+`id` INT NOT NULL AUTO_INCREMENT,
 `first_name` VARCHAR(45) NULL,
 `last_name` VARCHAR(45) NULL,
 `nick_name` VARCHAR(45) NULL,
@@ -84,6 +84,8 @@ CREATE TABLE IF NOT EXISTS `quiz`.`User` (
 `Role_id` INT NOT NULL,
 PRIMARY KEY (`id`, `Role_id`),
 INDEX `fk_User_Role1_idx` (`Role_id` ASC) VISIBLE,
+UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE,
+UNIQUE INDEX `nick_name_UNIQUE` (`nick_name` ASC) VISIBLE,
 CONSTRAINT `fk_User_Role1`
 FOREIGN KEY (`Role_id`)
 REFERENCES `quiz`.`Role` (`id`)
