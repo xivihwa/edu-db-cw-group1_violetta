@@ -7,11 +7,9 @@
 
 Примітка: Перед цим необхідно інсталювати Postman Agent, щоб тестувати запроси на локальному сервері.
 
-### Отримання інформації по всім Useram
+### Отримання інформації по всім User - ам
 
 <img src="./media_labs6/Users.png">
-
-<img src="./media_labs6/Users1.png">
 
 ### Отримання інформації по id Usera
 
@@ -25,10 +23,6 @@
 
 <img src="./media_labs6/User_email.png">
 
-#### Помилка створення юзера по причині: "Такий нікнейм вже існує"
-
-<img src="./media_labs6/User_nickname.png">
-
 ### Видалення юзеру
 
 <img src="./media_labs6/User_delete.png">
@@ -37,17 +31,19 @@
 
 <img src="./media_labs6/User_not_found.png">
 
-### Вміст таблиці 'User' у базі 'quiz' даних після видалення юзеру
-
-<img src="./media_labs6/User_delete_SQL.png">
-
 ### Оновлення юзеру
 
 <img src="./media_labs6/User_update.png">
 
-### Вміст таблиці 'User' у базі 'quiz'  даних після виконання усіх операцій
+
+### Вміст таблиці 'User' у базі 'quiz' даних до видалення юзеру
 
 <img src="./media_labs6/Users_SQL.png">
+
+### Вміст таблиці 'User' у базі 'quiz' даних після видалення юзеру
+
+<img src="./media_labs6/User_update_SQL.png">
+
 
 
 
